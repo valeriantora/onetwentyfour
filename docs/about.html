@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>me!</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showContent('lavieen')">lavieen</a></li>
+                    <li><a href="#" onclick="showContent('valerian')">valerian</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article id="lavieenContent" class="content">
+                <div>
+                    <h1>lavieen</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reprehenderit aspernatur, eius dolorum ullam dicta quam reiciendis exercitationem quia beatae eaque explicabo voluptate, dignissimos esse nulla perferendis recusandae doloremque repudiandae?</p>
+                </div>
+                <aside class="related">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In maiores nostrum beatae minus provident ut, porro quaerat optio esse quas amet molestias, odit sunt cupiditate labore, at dolorem explicabo. Saepe.</p>
+                </aside>
+            </article>
+
+            <article id="valerianContent" class="content hidden">
+                <div>
+                    <h1>valerian</h1>
+                    <p>bukan Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reprehenderit aspernatur, eius dolorum ullam dicta quam reiciendis exercitationem quia beatae eaque explicabo voluptate, dignissimos esse nulla perferendis recusandae doloremque repudiandae?</p>
+                </div>
+                <aside class="related">
+                    <p>bukan Lorem ipsum dolor, sit amet consectetur adipisicing elit. In maiores nostrum beatae minus provident ut, porro quaerat optio esse quas amet molestias, odit sunt cupiditate labore, at dolorem explicabo. Saepe.</p>
+                </aside>
+            </article>
+
+            <aside class="sidebar">
+                <h2>how I choose</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam adipisci fuga quia harum ratione, eius alias soluta corporis, facilis porro unde pariatur autem fugit odio dolor tenetur iusto ullam!</li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer>
+            <p>&copy;2024</p>
+        </footer>
+
+        <script>
+            function showContent(contentId) {
+                document.getElementById('lavieenContent').classList.add('hidden');
+                document.getElementById('valerianContent').classList.add('hidden');
+
+                document.getElementById(contentId + 'Content').classList.remove('hidden');
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 2em auto;
+    font: 1em/1.3 Helvetica;
+    background-color: chocolate;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ header {
+    text-align: center;
+    color: coral;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand {
+    width: 10em;
+    height: 10em;
+    margin: 12px;
+}
+
