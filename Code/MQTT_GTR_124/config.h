@@ -1,8 +1,8 @@
-const char* SSID_WIFI = "lavieenrose_2.4G";
-const char* SSID_PASS = "admin.admin";
-const char* AP_SSID = "oaoaoa";
-const char* AP_PASS = "12345678";
-const char* mqtt_server = "192.168.0.200";
+const char* SSID_WIFI = "";
+const char* SSID_PASS = "";
+const char* AP_SSID = "";
+const char* AP_PASS = "";
+const char* mqtt_server = "";
 const char* mqtt_user = "";
 const char* mqtt_pass = "";
 unsigned long lastMsg = 0;
